@@ -61,9 +61,9 @@ Use this command:
 🔷 Go to the /plugins folder (https://github.com/Infocom-Telegram-Community/nebula/tree/master/plugins)
 <br>
 🔷 inside the plugins folder you will find the ```__init__.py``` file
-    Every time you add a plugin inside the folder you have to add the name of the file in the __all__ array
+    Every time you add a plugin inside the folder you have to add the name of the file in the ```__all__``` array
     For example:
-    if we create the banana.py file we have to insert banana inside __all__
+    if we create the banana.py file we have to insert banana inside ```__all__```
     <a href="https://imgur.com/pMiwxIR"><img src="https://i.imgur.com/pMiwxIR.png" title="source: imgur.com" /></a>
     <a href="https://imgur.com/dR0nN1P"><img src="https://i.imgur.com/dR0nN1P.png" title="source: imgur.com" /></a>
     <br>
