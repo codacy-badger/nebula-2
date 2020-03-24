@@ -69,7 +69,7 @@ Use this command:
     <a href="https://imgur.com/dR0nN1P"><img src="https://i.imgur.com/dR0nN1P.png" title="source: imgur.com" /></a>
     <br>
 🔷Now let's go to bot.py and enter our plugin command with the following command line:
-    dispatcher.add_handler (CommandHandler ("banana", plugins.banana.init))
+    ```dispatcher.add_handler (CommandHandler ("banana", plugins.banana.init))```
     where we will insert plugins.filename.functionname
     and in "banana" enter the command that will work on telegram (/banana)
     <a href="https://imgur.com/sOoPruP"><img src="https://i.imgur.com/sOoPruP.png" title="source: imgur.com" /></a>
