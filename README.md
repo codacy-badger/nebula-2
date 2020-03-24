@@ -60,7 +60,7 @@ Use this command:
 ## How can I create a plugin?
 🔷 Go to the /plugins folder (https://github.com/Infocom-Telegram-Community/nebula/tree/master/plugins)
 <br>
-🔷 inside the plugins folder you will find the <code>__init__.py</code> file
+🔷 inside the plugins folder you will find the ```__init__.py``` file
     Every time you add a plugin inside the folder you have to add the name of the file in the __all__ array
     For example:
     if we create the banana.py file we have to insert banana inside __all__
