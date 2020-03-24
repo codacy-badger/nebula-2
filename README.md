@@ -38,6 +38,7 @@ Besides [Python 3.7+](https://www.python.org/downloads/) we will be using the fo
 <li>/setwelcome {text} [set the welcome]</li>
 <li>/updatewelcome {text} [update the welcome]</li>
 <li>/add BUTTONNAME,example.com [add welcome button]</li>
+<li>/list [remove and see buttons]</li>
 <li>/meteo cityname [weather]</li>
 </ul> 
 
