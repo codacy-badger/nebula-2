@@ -64,6 +64,7 @@ Use this command:
     Every time you add a plugin inside the folder you have to add the name of the file in the ```__all__``` array
     For example:
     if we create the banana.py file we have to insert banana inside ```__all__```
+    <br>
     <a href="https://imgur.com/pMiwxIR"><img src="https://i.imgur.com/pMiwxIR.png" title="source: imgur.com" /></a>
     <a href="https://imgur.com/dR0nN1P"><img src="https://i.imgur.com/dR0nN1P.png" title="source: imgur.com" /></a>
     <br>
