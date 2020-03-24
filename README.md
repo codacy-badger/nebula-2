@@ -13,7 +13,7 @@
 
 Besides [Python 3.7+](https://www.python.org/downloads/) we will be using the following packages:
 
-<b>Install requirements</b> (https://github.com/hersel91/nebula/blob/master/requirements.txt)
+<b>Install requirements</b> (https://github.com/Infocom-Telegram-Community/nebula/blob/master/requirements.txt)
 <br>
 <b>Command:</b> ```pip install -r requirements.txt``` <b>Or</b> ```pip3 install -r requirements.txt```
 
@@ -37,6 +37,8 @@ Besides [Python 3.7+](https://www.python.org/downloads/) we will be using the fo
 <li>/listwelcome [watch your group welcome]</li>
 <li>/setwelcome {text} [set the welcome]</li>
 <li>/updatewelcome {text} [update the welcome]</li>
+<li>/add BUTTONNAME,example.com [add welcome button]</li>
+<li>/meteo cityname [weather]</li>
 </ul> 
 
 <b>Import the database from the /SQL folder</b>
@@ -53,6 +55,24 @@ Use this command:
 
 <b>Important Note: This bot only works with python telegram bot 12.1.1+</b>
 <br>
+
+## How can I create a plugin?
+🔷 Go to the /plugins folder (https://github.com/Infocom-Telegram-Community/nebula/tree/master/plugins)
+<br>
+🔷 inside the plugins folder you will find the __init__.py file
+    Every time you add a plugin inside the folder you have to add the name of the file in the __all__ array
+    For example:
+    if we create the banana.py file we have to insert banana inside __all__
+    <a href="https://imgur.com/pMiwxIR"><img src="https://i.imgur.com/pMiwxIR.png" title="source: imgur.com" /></a>
+    <a href="https://imgur.com/dR0nN1P"><img src="https://i.imgur.com/dR0nN1P.png" title="source: imgur.com" /></a>
+    <br>
+🔷Now let's go to bot.py and enter our plugin command with the following command line:
+    dispatcher.add_handler (CommandHandler ("banana", plugins.banana.init))
+    where we will insert plugins.filename.functionname
+    and in "banana" enter the command that will work on telegram (/banana)
+    <a href="https://imgur.com/sOoPruP"><img src="https://i.imgur.com/sOoPruP.png" title="source: imgur.com" /></a>
+    <br>
+🔷 Video Tutorial: https://youtu.be/Bmm37wG1EZQ
 
 # Credits
 <br>

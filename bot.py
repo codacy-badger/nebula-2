@@ -85,11 +85,12 @@ def commandHandler(dispatcher):
 
 #########################################################################
 #                           PLUGINS MODULES                             #
-#                   Decorator: @decorator.owner.init                    #
+#                                                                       #
 #                           Source: /plugins                            #
 #                                                                       #
 #########################################################################
     dispatcher.add_handler(CommandHandler("example", plugins.example.init))
+    
 
 
 
