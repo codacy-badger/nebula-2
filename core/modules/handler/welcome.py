@@ -39,13 +39,6 @@ def init(update, context):
                 bot.send_message(update.message.chat_id, str_service.DEFAULT_WELCOME.format(username="@"+member.username,chat=update.message.chat.title))
 
         else:
-            bot.send_message(update.message.chat_id,"{} imposta un username!\nSei stato mutato per sicurezza!"
+            bot.send_message(update.message.chat_id,"{} imposta un username!\nSei stato kickato per sicurezza!"
                              .format(update.message.from_user.id))
-            bot.restrict_chat_member(update.message.chat_id,
-                                     update.message.from_user.id,
-                                     ChatPermissions(
-                                         can_send_messages=False,
-                                         can_send_media_messages=False,
-                                         can_send_other_messages=False,
-                                         can_add_web_page_previews=False)
-                                     )
+            bot.kick_chat_member(update.message.chat_id,update.message.from_user.id)
