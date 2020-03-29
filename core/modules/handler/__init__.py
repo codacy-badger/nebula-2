@@ -1,6 +1,5 @@
 __all__ = ["main_handler",
            "welcome",
-           "define",
            "bad_words",
            "admin_command",
            "joke",

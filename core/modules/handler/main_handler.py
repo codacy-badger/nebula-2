@@ -3,11 +3,12 @@ from core.utility import utils
 from . import (
     admin_command, 
     joke, 
-    custom_handler, 
-    define, send_nudes, 
+    custom_handler,
+	send_nudes, 
     bad_words, 
     welcome,
-	super_ban_handler
+	super_ban_handler,
+	test
     )
 
 msg = ""
@@ -22,17 +23,16 @@ def init(update, context):
 
 	bad_words.init(update, context)
 	super_ban_handler.init(update, context)
+	#test.telegram_api(update,context)
 	
 	if update.message is None or update.message.text is None:
 		return
 
 	msg = update.message.text
 
-	if trigger("zampa definisci"):
-		define.init(update, context)
-	elif trigger("zampa send nudes"):
+	if trigger("{} send nudes".format(Config.BOT_NAME)):
 		send_nudes.init(update, context)
-	elif trigger("zampa fai una battuta"):
+	elif trigger("{} fai una battuta".format(Config.BOT_NAME)):
 		joke.init(update, context)
 	elif trigger("@admin"):
 		admin_command.init(update, context)

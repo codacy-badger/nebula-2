@@ -10,7 +10,8 @@ __all__ = [
            "translate",
            "search_google",
            "search_qwant",
-           "weather"
+           "weather",
+           "define"
            ]
 
 from core.modules.commands.user import *

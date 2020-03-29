@@ -43,6 +43,7 @@ def commandHandler(dispatcher):
     dispatcher.add_handler(CommandHandler("google", commands.user.search_google.init))
     dispatcher.add_handler(CommandHandler("cerca", commands.user.search_qwant.init))
     dispatcher.add_handler(CommandHandler("meteo", commands.user.weather.init))
+    dispatcher.add_handler(CommandHandler("wikipedia", commands.user.define.init))
     
 #########################################################################
 #                           ADMIN COMMAND                               #

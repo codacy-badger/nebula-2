@@ -6,8 +6,7 @@ from core.utility import utils
 @core.decorators.public_command.init
 def init(update, context):
     bot = context.bot
-    # Recupero della definizione
-    arg = update.message.text[16:]
+    arg = update.message.text[10:]
     wiki.set_lang('it')
     try:
         pg = wiki.page(wiki.search(arg)[0])
