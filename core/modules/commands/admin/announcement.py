@@ -1,6 +1,4 @@
 import core.decorators
-from config import Config
-
 
 @core.decorators.admin.user_admin
 @core.decorators.delete.init

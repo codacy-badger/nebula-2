@@ -1,11 +1,9 @@
-  
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Copyright hersel91 <hersel1991@gmail.com>
 from telegram.ext.dispatcher import run_async
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from core.utility import utils
-from telegram import ChatPermissions
 from core.sql.db_connect import Connection
 from core.sql.handler_sql import Sql_Welcome
 from core.sql.commands_sql import Sql_Buttons

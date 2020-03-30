@@ -1,7 +1,6 @@
 import core.decorators
 from config import Config
 from core.utility.strings import str_admin_command
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
  
 @core.decorators.public_command.init

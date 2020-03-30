@@ -4,8 +4,7 @@ from . import (
     joke, 
     custom_handler,
 	send_nudes, 
-    bad_words, 
-    welcome,
+    bad_words,
 	super_ban_handler
     )
 
