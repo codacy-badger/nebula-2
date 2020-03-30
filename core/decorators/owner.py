@@ -1,8 +1,6 @@
 from config import Config
 from functools import wraps
-#OWNERBOT
 OWNER_LIST= Config.OWNER
-
 def init(func):
     @wraps(func)
     def wrapped(update, context):        
