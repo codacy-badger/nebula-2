@@ -6,7 +6,7 @@ class Config(object):
     BOT_USER = " @thenebula_bot"
     BOT_NAME = "nebula"
     AUTHOR = " InfocomTeam"
-    VERSION = " 7.2.2(Glaceon)"
+    VERSION = " 7.2.4(Glaceon)"
     SOURCE = "https://github.com/Infocom-Telegram-Community/nebula"
     #########################################################################
     #                            TELEGRAM CONFIG                            #
