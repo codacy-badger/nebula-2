@@ -1,4 +1,3 @@
-import json
 from config import Config
 from flaky import flaky
 from yandex.Translater import Translater

@@ -1,5 +1,4 @@
 import core.decorators
-from datetime import datetime
 from core.sql.db_connect import Connection
 from core.sql.commands_sql import Sql_Insert_Rules
 from core.utility.strings import str_service

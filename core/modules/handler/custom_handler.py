@@ -1,9 +1,5 @@
-import telegram
-import core.decorators
 from core.sql.db_connect import Connection
 from core.sql.handler_sql import Sql_Custom_Handler
-from random import random
-from time import sleep
 
 #This command calls the answers from the database, watch:/core/modules/commands/admin/insert_custom_handler.py
 def customhandler(update, context):

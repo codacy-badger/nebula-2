@@ -12,4 +12,4 @@ def init(update, context):
     except:
         bot.send_message(update.message.chat_id, text="<b>Non hai scritto alcun messaggio!"\
             "Riprova scrivendo un messaggio dopo il comando /say</b>", 
-                         parse_mode='HTML')
+            parse_mode='HTML')

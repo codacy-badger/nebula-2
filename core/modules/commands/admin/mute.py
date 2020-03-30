@@ -1,5 +1,4 @@
 import core.decorators
-import time
 from config import Config
 from telegram.ext.dispatcher import run_async
 from telegram import ChatPermissions

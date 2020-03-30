@@ -7,8 +7,7 @@ from . import (
 	send_nudes, 
     bad_words, 
     welcome,
-	super_ban_handler,
-	test
+	super_ban_handler
     )
 
 msg = ""
@@ -23,7 +22,6 @@ def init(update, context):
 
 	bad_words.init(update, context)
 	super_ban_handler.init(update, context)
-	#test.telegram_api(update,context)
 	
 	if update.message is None or update.message.text is None:
 		return
