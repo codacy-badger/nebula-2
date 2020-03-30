@@ -6,6 +6,7 @@
 
 # Python import for error handler and logging
 import logging
+from datetime import datetime
 from core.utility import error_handler
 
 # Import telegram library
@@ -21,6 +22,9 @@ from telegram.ext import (
 import plugins
 from config import Config
 from core.modules import commands,handler
+
+timestamp = datetime.strftime(datetime.today(), '%H:%M at %d/%m/%Y')
+print("Start Bot {}".format(timestamp))
 
 # This enables the logs
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)

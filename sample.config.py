@@ -2,7 +2,7 @@ class Config(object):
     #########################################################################
     #                            GENERAL CONFIG                             #
     #########################################################################
-    BOT_TOKEN = "INSERT TOKEN HERE"
+    BOT_TOKEN = ""
     BOT_USER = " @thenebula_bot"
     BOT_NAME = "nebula"
     AUTHOR = " InfocomTeam"
