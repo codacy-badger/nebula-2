@@ -1,5 +1,4 @@
 from config import Config
-from core.utility import utils
 from . import (
     admin_command, 
     joke, 

@@ -14,7 +14,6 @@ def customhandler(update, context):
 		update.message.from_user.first_name).replace('{chat_title}',
 		update.message.chat.title).replace('{username}',
 		"@"+update.message.from_user.username)
-        
         message = "{}".format(parsed_message)
         update.message.reply_text(text=message, parse_mode='HTML')
         row = connector.cur.fetchone()

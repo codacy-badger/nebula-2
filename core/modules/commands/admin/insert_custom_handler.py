@@ -12,7 +12,6 @@ def init(update, context):
     chatid = str(update.message.chat_id)
     var_question = str(update.message.reply_to_message.text).lower()
     var_answer = str(update.message.text[12:]).lower()
-    
     query = Sql_Insert_CH.SQL_1
     connector.cur.execute(query, [var_answer,chatid])
     row = connector.cur.fetchone()

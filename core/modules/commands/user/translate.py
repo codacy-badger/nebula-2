@@ -14,5 +14,4 @@ def init(update, context):
         tr.set_to_lang('en')
         bot.send_message(update.message.chat_id, tr.translate())
     except:
-        bot.send_message(update.message.chat_id,text="Perfavore inserisci una frase.")
-        
+        bot.send_message(update.message.chat_id,text="Perfavore inserisci una frase.")        
