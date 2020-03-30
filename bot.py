@@ -118,7 +118,7 @@ def messageHandler(dispatcher):
     
 # This is the function that initializes the bot
 def main():
-    updater = Updater(Config.BOT_TOKEN, use_context=True)
+    updater = Updater(Config.BOT_API, use_context=True)
     dp = updater.dispatcher
     #########################################################################
     #                          FILTERS HANDLER                              #
